@@ -37,6 +37,6 @@ app.get('/:matkul/:kelas', async function (req, res) {
     let file = readFileSync(`./list_kelas/${title}`)
     let file_decrypted = crypt.decrypt(file)
     let data = JSON.parse(file_decrypted)
-    return res.render('index', {data: data, judul: title})
+    return res.render('index', {data: data, judul: title.replace('.txt', '')})
 })
 app.listen(PORT)
