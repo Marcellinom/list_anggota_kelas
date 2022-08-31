@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Anggota Kelas</title>
+</head>
+<style>
+    table, th, td {
+       border: 1px solid black;
+    }
+</style>
+<body>
+    <a style="font-size: 50px; font-weight: bolder;">
+        <%= judul %>
+    </a>
+    <table>
+        <tr style="text-align: center; font-weight: bolder;">
+            <td>Foto</td>
+            <td>Nama</td>
+            <td>NRP</td>
+        </tr>
+        <% data.forEach(function(dat) { %>
+            <tr>
+                <td>
+                    <img height="200px" width="150px" alt="not found" src="<%=`https://res.cloudinary.com/marsel/image/upload/v1644346047/dbtc/${dat.nrp}.jpg`%>">
+                </td>
+                <td><%= dat.nama %></td>
+                <td><%= dat.nrp %></td>
+            </tr>
+        <% }); %>
+    </table>
+</body>
+</html>
