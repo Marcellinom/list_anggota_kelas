@@ -2,6 +2,8 @@ import express from 'express'
 import ejs from 'ejs'
 import { readFileSync } from 'fs'
 import Cryptr from 'cryptr'
+import * as dotenv from 'dotenv'
+dotenv.config()
 
 const crypt = new Cryptr(process.env.app_key)
 const app = express()
