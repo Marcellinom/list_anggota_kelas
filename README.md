@@ -5,4 +5,4 @@ menglist setiap anggota kelas semester 5 dengan gambar wajah
 {domain}/{jarkom, mppl, peweb, grafkom, kk, ppl}/{a-f}
 
 ## example
-[https://108.137.55.6:9000/peweb/c](https://108.137.55.6:9000/peweb/c)
+[http://108.137.55.6:9000/peweb/c](http://108.137.55.6:9000/peweb/c)
