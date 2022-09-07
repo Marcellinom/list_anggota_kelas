@@ -11,6 +11,9 @@ const PORT = process.env.PORT || 9000
 
 app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
+app.get('/', (req, res) => {
+    res.send(`usage => ${req.get('host')}/{jarkom, mppl, peweb, grafkom, kk, ppl}/{a-f}`)
+})
 app.get('/:matkul/:kelas', async function (req, res) {
     var nama_matkul;
     switch (req.params.matkul) {
