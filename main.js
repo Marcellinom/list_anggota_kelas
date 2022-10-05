@@ -30,6 +30,7 @@ app.get('/:matkul/:kelas', async function (req, res) {
             nama_matkul = 'Manajemen Proyek Perangkat Lunak'
             break
         case 'peweb':
+        case 'pweb':
             nama_matkul = 'Pemrograman Web'
             break
         case 'ppl':
